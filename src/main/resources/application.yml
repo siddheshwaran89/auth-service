@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: "userservice"
+  cloud:
+    config:
+      name: userservice
+      profile: active
+  config:
+    import: optional:configserver:http://localhost:2000
+
+
+
+
+
